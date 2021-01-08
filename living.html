@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Living Room</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Living Room</h1></header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="/index.html">Home</a>
+        <a href="/bathroom.html">Bathroom</a>
+        <a href="/master.html">Master</a>
+        <a href="/living.html">Living Room</a>
+    </div>
+
+    <div class="flex-container" style="display: inline-block">
+      <font size="3"> Configure your Living Room </font> <br />
+      <br />
+
+      <form f1>
+        <label for="colourWall">Choose a colour:</label><br>
+        <select id="colourWallList" name="colour" size="5">
+        </select><br><br>
+      </form>
+    </div>
+    <br />
+
+    <div class="list">
+      <header h2>List of Destinations:</header>
+      <ul id="list">
+        <li>
+          <span class="name"><strong>NAME</strong></span>
+          <span class="location"><strong>LOCATION</strong></span>
+          <span class="category"><strong>CATEGORY</strong></span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
