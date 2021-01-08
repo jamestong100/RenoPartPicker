@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Configurator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Home Configurator</h1></header>
+    <div class="flex-container" style="display: inline-block">
+      <font size="3"> Configure your room </font> <br />
+      <br />
+
+      <form f1>
+        <label for="colourWall">Choose a colour:</label><br>
+        <select id="colourWallList" name="colour" size="5">
+        </select><br><br>
+        Name:
+        <input class="fill-width" type="text" id="name" name="name" /><br />
+        Location:
+        <input
+          class="fill-width"
+          type="text"
+          id="location"
+          name="location"
+        /><br />
+        Category:
+        <input
+          class="fill-width"
+          type="text"
+          id="category"
+          name="category"
+        /><br />
+        <input
+          class="fill-width"
+          type="button"
+          name="Add"
+          value="Add"
+          onclick="addDestination( document.getElementById('name').value,
+        document.getElementById('location').value,
+        document.getElementById('category').value)"
+        />
+      </form>
+
+      <button b1 onclick="randomDestination()" class="fill-width">
+        Generate Random Destination
+      </button>
+    </div>
+    <br />
+    <p id="destination" style="font-size: 150%">Your next destination:</p>
+    <br />
+
+    <div class="list">
+      <header h2>List of Destinations:</header>
+      <ul id="list">
+        <li>
+          <span class="name"><strong>NAME</strong></span>
+          <span class="location"><strong>LOCATION</strong></span>
+          <span class="category"><strong>CATEGORY</strong></span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="locations.js" charset="utf-8"></script>
+  </body>
+</html>
